@@ -5,15 +5,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #f1f1f1;
   min-height: 100%;
   padding-bottom: 5rem;
 }
 h1, h2  {
-  color: white;
+  color: rgb(26, 32, 44);
   padding: 3rem 0;
   text-align: center;
 
@@ -41,7 +38,7 @@ h1, h2  {
 }
 
 label {
-  color: white;
+  color: rgb(63, 62, 62);
 }
 
 input[type="date"],
@@ -80,17 +77,7 @@ input[type="time"] {
 }
 .button.eliminar,
 .button.eliminar:hover {
-  background-color: #c10059;
+  background: linear-gradient(270deg,#f50a81 25.28%,#9d09db 59.7%,#f722c9 97.75%);
   color: white;
   margin-top: 2rem;
 }
-
-.alerta-error {
-  background-color: white;
-  color: red;
-  padding: 1rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-family:  'Staatliches', cursive;
-} 

@@ -1,5 +1,16 @@
 import React, { Fragment, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import styled from '@emotion/styled'
+
+const MensajeError = styled.section`
+    background-color: #fa3a2f;
+    color: #f1f1f1;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1em;
+`
 
 const Formulario = ({crearCita}) => {
 
@@ -66,7 +77,7 @@ const Formulario = ({crearCita}) => {
         <Fragment>
             <h2>Crear Cita</h2>
 
-            { error ? <p className="alerta-error">Todos los campos son obligatorios</p> : null }
+            { error ? <MensajeError>Todos los campos son obligatorios</MensajeError> : null }
             <form
                 onSubmit={submitCita}
             >

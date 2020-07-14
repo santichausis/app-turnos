@@ -1,7 +1,13 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Formulario from  './components/Formulario';
 import Cita from  './components/Cita';
+import styled from '@emotion/styled'
 
+const Header = styled.section`
+  background: linear-gradient(270deg,#f50a81 25.28%,#9d09db 59.7%,#f722c9 97.75%);
+  width: 100%;
+  height: 15px;
+`
 
 function App() {
 
@@ -46,6 +52,7 @@ function App() {
 
   return (
     <Fragment>
+      <Header/>
       <h1>Administrador de Turnos</h1>
         <div className="container">
         <div className="row">
